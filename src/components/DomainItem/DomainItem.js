@@ -148,7 +148,13 @@ const Label = ({ domain, isOwner }) => {
   )
 }
 
-const Domain = ({ domain, isSubDomain, className, isFavourite, loading }) => {
+const Domain = ({
+  domain = {},
+  isSubDomain,
+  className,
+  isFavourite,
+  loading
+}) => {
   if (loading) {
     return (
       <DomainContainer state={'Owned'} className={className} to="">

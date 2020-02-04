@@ -14,10 +14,10 @@ const cache = new InMemoryCache({
 })
 
 const endpoints = {
-  '1': 'https://api.thegraph.com/subgraphs/name/ensdomains/ens',
-  '3': 'https://api.thegraph.com/subgraphs/name/ensdomains/ensropsten',
-  '4': 'https://api.thegraph.com/subgraphs/name/ensdomains/ensrinkeby',
-  '5': 'https://api.thegraph.com/subgraphs/name/ensdomains/ensgoerli'
+  '1': 'https://graph.elaeth.io/subgraphs/name/luckyyang/ela-ens'
+  // '3': 'https://graph.elaeth.io/subgraphs/name/ensdomains/ensropsten',
+  // '4': 'https://graph.elaeth.io/subgraphs/name/ensdomains/ensrinkeby',
+  // '5': 'https://graph.elaeth.io/subgraphs/name/ensdomains/ensgoerli'
 }
 
 function getGraphQLAPI(network) {

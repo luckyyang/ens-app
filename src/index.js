@@ -13,7 +13,7 @@ import { getNetworkId } from '@ensdomains/ui'
 
 window.addEventListener('load', async () => {
   let client
-
+  console.log('===== ensAddress: ', process.env.REACT_APP_ENS_ADDRESS)
   try {
     if (
       process.env.REACT_APP_STAGE === 'local' &&
@@ -21,12 +21,14 @@ window.addEventListener('load', async () => {
     ) {
       await setupENS({
         reloadOnAccountsChange: true,
-        customProvider: 'http://localhost:8545',
+        customProvider: 'https://mainrpc.elaeth.io',
         ensAddress: process.env.REACT_APP_ENS_ADDRESS
       })
     } else {
       await setupENS({
-        reloadOnAccountsChange: false
+        reloadOnAccountsChange: false,
+        customProvider: 'https://mainrpc.elaeth.io',
+        ensAddress: process.env.REACT_APP_ENS_ADDRESS
       })
     }
     const networkId = await getNetworkId()
