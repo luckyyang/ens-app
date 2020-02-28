@@ -62,15 +62,15 @@ export async function getEtherScanAddr() {
   switch (networkId) {
     case 1:
     case '1':
-      return 'https://etherscan.io/'
+      return 'https://explorer.elaeth.io/'
     case 3:
     case '3':
-      return 'https://ropsten.etherscan.io/'
-    case 4:
-    case '4':
-      return 'https://rinkeby.etherscan.io/'
+      return 'https://testnet.elaeth.io/'
+    // case 4:
+    // case '4':
+    //   return 'https://testnet.elaeth.io/'
     default:
-      return 'https://etherscan.io/'
+      return 'https://explorer.elaeth.io/'
   }
 }
 

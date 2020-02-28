@@ -313,32 +313,32 @@ const resolvers = {
         1: {
           DEPRECATED: [],
           OLD: [
-            '0x5ffc014343cd971b7eb70732021e26c35b744cc4',
-            '0x6dbc5978711cb22d7ba611bc18cec308ea12ea95',
-            '0xd3ddccdd3b25a8a7423b5bee360a42146eb4baf3',
-            '0x226159d592e2b063810a10ebf6dcbada94ed68b8'
+            '0x62b3497cB4455bd320c0E9f36d5f6836952999e4'
+            // '0x6dbc5978711cb22d7ba611bc18cec308ea12ea95',
+            // '0xd3ddccdd3b25a8a7423b5bee360a42146eb4baf3',
+            // '0x226159d592e2b063810a10ebf6dcbada94ed68b8'
           ]
         },
         3: {
           OLD: [
-            '0x12299799a50340FB860D276805E78550cBaD3De3', // Ropsten
-            '0x9C4c3B509e47a298544d0fD0591B47550845e903' // Ropsten
+            // '0x12299799a50340FB860D276805E78550cBaD3De3', // Ropsten
+            // '0x9C4c3B509e47a298544d0fD0591B47550845e903' // Ropsten
           ],
           DEPRECATED: []
-        },
-        4: {
-          OLD: ['0x06E6B4E68b0B9B2617b35Eec811535050999282F'],
-          DEPRECATED: []
-        },
-        5: {
-          OLD: ['0xfF77b96d6bafCec0D684bB528b22e0Ab09C70663'],
-          DEPRECATED: []
         }
+        // 4: {
+        //   OLD: ['0x06E6B4E68b0B9B2617b35Eec811535050999282F'],
+        //   DEPRECATED: []
+        // },
+        // 5: {
+        //   OLD: ['0xfF77b96d6bafCec0D684bB528b22e0Ab09C70663'],
+        //   DEPRECATED: []
+        // }
       }
 
       let DEPRECATED_RESOLVERS = []
       let OLD_RESOLVERS = [
-        '0xDaaF96c344f63131acadD0Ea35170E7892d3dfBA' // all networks
+        '0x62b3497cB4455bd320c0E9f36d5f6836952999e4' // all networks
       ]
 
       if (RESOLVERS[networkId]) {
@@ -536,9 +536,9 @@ const resolvers = {
     migrateResolver: async (_, { name }, { cache }) => {
       function calculateIsOldContentResolver(resolver) {
         const oldContentResolvers = [
-          '0x5ffc014343cd971b7eb70732021e26c35b744cc4',
-          '0x6dbc5978711cb22d7ba611bc18cec308ea12ea95',
-          '0xbf80bc10d6ebfee11bea9a157d762110a0b73d95'
+          '0x62b3497cB4455bd320c0E9f36d5f6836952999e4'
+          // '0x6dbc5978711cb22d7ba611bc18cec308ea12ea95',
+          // '0xbf80bc10d6ebfee11bea9a157d762110a0b73d95'
         ]
         const localResolvers = process.env.REACT_APP_OLD_CONTENT_RESOLVERS
           ? process.env.REACT_APP_OLD_CONTENT_RESOLVERS.split(',')
