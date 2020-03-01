@@ -21,7 +21,8 @@ window.addEventListener('load', async () => {
     ) {
       await setupENS({
         reloadOnAccountsChange: true,
-        customProvider: 'http://localhost:8545',
+        // customProvider: 'http://localhost:8545',
+        customProvider: 'https://rpc.elaeth.io',
         ensAddress: process.env.REACT_APP_ENS_ADDRESS
       })
     } else {

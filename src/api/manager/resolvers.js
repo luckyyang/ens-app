@@ -321,7 +321,7 @@ const resolvers = {
         },
         3: {
           OLD: [
-            '0x12299799a50340FB860D276805E78550cBaD3De3', // Ropsten
+            '0xdfe06D05538bEd43bB9e1bf34e00069A377960c9', // Ropsten
             '0x9C4c3B509e47a298544d0fD0591B47550845e903' // Ropsten
           ],
           DEPRECATED: []
