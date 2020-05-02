@@ -313,7 +313,7 @@ const resolvers = {
         1: {
           DEPRECATED: [],
           OLD: [
-            '0xdfe06D05538bEd43bB9e1bf34e00069A377960c9'
+            '0x4ef059036DEB6131bde9ceBdA74A0A9E792c2889'
             // '0x6dbc5978711cb22d7ba611bc18cec308ea12ea95',
             // '0xd3ddccdd3b25a8a7423b5bee360a42146eb4baf3',
             // '0x226159d592e2b063810a10ebf6dcbada94ed68b8'
@@ -321,7 +321,7 @@ const resolvers = {
         },
         3: {
           OLD: [
-            '0xdfe06D05538bEd43bB9e1bf34e00069A377960c9' // Ropsten
+            '0x4ef059036DEB6131bde9ceBdA74A0A9E792c2889' // Ropsten
             // '0x9C4c3B509e47a298544d0fD0591B47550845e903' // Ropsten
           ],
           DEPRECATED: []
@@ -338,7 +338,7 @@ const resolvers = {
 
       let DEPRECATED_RESOLVERS = []
       let OLD_RESOLVERS = [
-        '0xdfe06D05538bEd43bB9e1bf34e00069A377960c9' // all networks
+        '0x4ef059036DEB6131bde9ceBdA74A0A9E792c2889' // all networks
       ]
 
       if (RESOLVERS[networkId]) {
@@ -536,7 +536,7 @@ const resolvers = {
     migrateResolver: async (_, { name }, { cache }) => {
       function calculateIsOldContentResolver(resolver) {
         const oldContentResolvers = [
-          '0xdfe06D05538bEd43bB9e1bf34e00069A377960c9'
+          '0x4ef059036DEB6131bde9ceBdA74A0A9E792c2889'
           // '0x6dbc5978711cb22d7ba611bc18cec308ea12ea95',
           // '0xbf80bc10d6ebfee11bea9a157d762110a0b73d95'
         ]
