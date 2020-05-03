@@ -5898,10 +5898,10 @@ eip55@^1.0.3:
   dependencies:
     keccak "^1.3.0"
 
-eladomains-ui@^2.0.12:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/eladomains-ui/-/eladomains-ui-2.0.13.tgz#b0697a6b389725fb7ea6947930553be3980aab73"
-  integrity sha512-YGH+Xx129ZhUvoVFfW8HkDKIe9WdP5Tp+vvwSBdRzIoZ3dJoqR9CoQCvf+uIjUFjNCpQGpIUm5CePMSGDxv9tg==
+eladomains-ui@2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/eladomains-ui/-/eladomains-ui-2.0.14.tgz#2ebb5b964c1caa064f3df40586f4d5065715645e"
+  integrity sha512-718HFQwNx83jUPD8Cqjk+HO9ZVgWlILUqhny0WUKkxSDzKFNqFzuykQxZg47qUoQTHo31cBK3/MF+MHoc/9m5g==
   dependencies:
     "@0xproject/utils" "^2.0.2"
     "@babel/runtime" "^7.4.4"
