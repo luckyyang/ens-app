@@ -1415,31 +1415,6 @@
     truffle-default-builder "^2.0.0"
     underscore "^1.8.3"
 
-"@ensdomains/ui@2.0.12":
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/@ensdomains/ui/-/ui-2.0.12.tgz#3b63ef5642596aafc0b00eae3200dceacd4d476c"
-  integrity sha512-u6keOxldv/gU0w2/NHSTDWfeiBH7lMNBKTCCZq32bdLOgj11yvvXfvoaiPY85nxw+YJUYjUL7Nmpk+ZGdBiP+Q==
-  dependencies:
-    "@0xproject/utils" "^2.0.2"
-    "@babel/runtime" "^7.4.4"
-    "@ensdomains/address-encoder" "^0.1.2"
-    "@ensdomains/dnsregistrar" "^0.3.9"
-    "@ensdomains/ens" "^0.4.3"
-    "@ensdomains/ens-022" "npm:@ensdomains/ens@0.2.2"
-    "@ensdomains/ethregistrar" "^2.0.0"
-    "@ensdomains/resolver" "0.2.4"
-    "@ensdomains/subdomain-registrar" "^0.2.1"
-    "@ethvault/iframe-provider" "0.1.9"
-    base58check "^2.0.0"
-    bech32 "^1.1.3"
-    bs58 "^4.0.1"
-    content-hash "^2.4.1"
-    cross-fetch "^3.0.2"
-    eth-ens-namehash "^2.0.8"
-    ethers "4.0.44"
-    js-sha3 "^0.8.0"
-    lodash "^4.17.11"
-
 "@ensdomains/ui@^1.1.15":
   version "1.1.15"
   resolved "https://registry.yarnpkg.com/@ensdomains/ui/-/ui-1.1.15.tgz#b36a0eec39b14153bcc83e7f228473e7c15f3057"
@@ -5922,6 +5897,31 @@ eip55@^1.0.3:
   integrity sha512-x1p4OJNlt0G3mPPZx9GgwOaLFvz8Wd4VFpkx3iNzW4SrakFnjjO4mDdmAJpETxJZp9SlNB4UFqDuFhElnX9K/Q==
   dependencies:
     keccak "^1.3.0"
+
+eladomains-ui@^2.0.12:
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/eladomains-ui/-/eladomains-ui-2.0.13.tgz#b0697a6b389725fb7ea6947930553be3980aab73"
+  integrity sha512-YGH+Xx129ZhUvoVFfW8HkDKIe9WdP5Tp+vvwSBdRzIoZ3dJoqR9CoQCvf+uIjUFjNCpQGpIUm5CePMSGDxv9tg==
+  dependencies:
+    "@0xproject/utils" "^2.0.2"
+    "@babel/runtime" "^7.4.4"
+    "@ensdomains/address-encoder" "^0.1.2"
+    "@ensdomains/dnsregistrar" "^0.3.9"
+    "@ensdomains/ens" "^0.4.3"
+    "@ensdomains/ens-022" "npm:@ensdomains/ens@0.2.2"
+    "@ensdomains/ethregistrar" "^2.0.0"
+    "@ensdomains/resolver" "0.2.4"
+    "@ensdomains/subdomain-registrar" "^0.2.1"
+    "@ethvault/iframe-provider" "0.1.9"
+    base58check "^2.0.0"
+    bech32 "^1.1.3"
+    bs58 "^4.0.1"
+    content-hash "^2.4.1"
+    cross-fetch "^3.0.2"
+    eth-ens-namehash "^2.0.8"
+    ethers "4.0.44"
+    js-sha3 "^0.8.0"
+    lodash "^4.17.11"
 
 electron-to-chromium@^1.3.191:
   version "1.3.242"
