@@ -84,7 +84,7 @@ export default function RegistryMigration({
           : dnssecmode
           ? dnssecMigrateMessage
           : defaultMessage}
-        {domain.parent !== 'eth' && !dnssecmode && (
+        {domain.parent !== 'ela' && !dnssecmode && (
           <SubWarning>
             *If you trade ENS names, do not accept this name!
           </SubWarning>

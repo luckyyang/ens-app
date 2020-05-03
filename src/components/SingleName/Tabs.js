@@ -39,7 +39,7 @@ const TabContainer = styled('div')`
 `
 function getDetailsActive(domain, pathname, tab) {
   const { name } = domain
-  if (domain.parent !== 'eth') {
+  if (domain.parent !== 'ela') {
     return (
       pathname !== `/name/${name}/register` &&
       pathname !== `/name/${name}/subdomains`
@@ -57,7 +57,7 @@ const Tabs = ({ domain, pathname, parent, tab }) => {
   return (
     (state !== 'Auction' || state !== 'Reveal') && (
       <TabContainer>
-        {parent === 'eth' && (
+        {parent === 'ela' && (
           <TabLink
             active={
               (tab === 'register' || pathname === `/name/${name}/register`) &&

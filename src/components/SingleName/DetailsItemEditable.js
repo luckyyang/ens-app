@@ -109,7 +109,7 @@ function getMessages({ keyName, parent, deedOwner, isDeedOwner }) {
   let [newValue, newType] = getDefaultMessage(keyName)
   if (
     keyName === 'Owner' &&
-    parent === 'eth' &&
+    parent === 'ela' &&
     parseInt(deedOwner, 16) !== 0
   ) {
     newValue = 'Pending'
