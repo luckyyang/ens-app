@@ -13,7 +13,7 @@ import {
   reclaim,
   submitProof,
   getOwner
-} from '@ensdomains/ui'
+} from 'eladomains-ui'
 
 import modeNames from '../modes'
 import { sendHelper } from '../resolverUtils'
