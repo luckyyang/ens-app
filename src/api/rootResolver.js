@@ -69,7 +69,7 @@ const resolvers = {
     },
     publicResolver: async () => {
       try {
-        const resolver = await getAddress('resolver.eth')
+        const resolver = await getAddress('resolver.ela')
         return {
           address: resolver,
           __typename: 'Resolver'

@@ -373,7 +373,7 @@ const resolvers = {
       }
 
       async function calculateIsPublicResolverReady() {
-        const publicResolver = await getAddress('resolver.eth')
+        const publicResolver = await getAddress('resolver.ela')
         return !OLD_RESOLVERS.map(a => a.toLowerCase()).includes(publicResolver)
       }
 
@@ -697,7 +697,7 @@ const resolvers = {
 
       // get public resolver
       try {
-        const publicResolver = await getAddress('resolver.eth')
+        const publicResolver = await getAddress('resolver.ela')
         const resolver = await getResolver(name)
         const isOldContentResolver = calculateIsOldContentResolver(resolver)
 
