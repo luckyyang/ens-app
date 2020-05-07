@@ -42,7 +42,7 @@ const resolvers = {
         case 2:
           return 'morden'
         case 3:
-          return 'ropsten'
+          return 'ela'
         case 4:
           return 'rinkeby'
         case 5:
