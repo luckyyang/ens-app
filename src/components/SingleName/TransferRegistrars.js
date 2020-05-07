@@ -108,7 +108,7 @@ const ReleaseInstead = ({ label, refetch }) => (
       actionType="link"
       explanation="You will no longer have ownership of this name"
     />{' '}
-    the domain to get your locked ETH back if you don’t want it anymore.
+    the domain to get your locked ELA back if you don’t want it anymore.
   </MigrationExplanation>
 )
 
@@ -119,7 +119,7 @@ function displayMigrationDiralogue({
   isNewRegistrar,
   confirmed
 }) {
-  return (parent === 'eth' && (isDeedOwner && !isNewRegistrar)) || confirmed
+  return (parent === 'ela' && (isDeedOwner && !isNewRegistrar)) || confirmed
 }
 
 function TransferRegistrars({
@@ -144,7 +144,7 @@ function TransferRegistrars({
       </MigrationInstruction>
       <MigrationExplanation>
         You successfully migrated this domain to the new ENS Permanent
-        Registrar. We've sent back to you the ETH that you had locked in the
+        Registrar. We've sent back to you the ELA that you had locked in the
         older registrar contract.
       </MigrationExplanation>
     </>
@@ -174,7 +174,7 @@ function TransferRegistrars({
       <MigrationExplanation>
         You no longer own this name and it has been made available for
         registration in the new ENS Permanent Registrar. You can release the
-        domain from the older registrar to get your locked ETH back and register
+        domain from the older registrar to get your locked ELA back and register
         it again in the new ENS Permanent Registrar. <LearnMore />
       </MigrationExplanation>
     </>
@@ -186,7 +186,7 @@ function TransferRegistrars({
         Migrate your name to the Permanent Registrar.
       </MigrationInstruction>
       <MigrationExplanation>
-        Migrate now to get your locked ETH back and free registration for one
+        Migrate now to get your locked ELA back and free registration for one
         year. If you do not migrate by{' '}
         <strong>{formatDate(transferEndDate, true)}</strong>, you will lose your
         domain, and others will be able to register it. <LearnMore />
@@ -201,7 +201,7 @@ function TransferRegistrars({
       refetch={refetch}
       actionText="Release"
       actionType="button"
-      explanation="You already lost ownership of this name but will get ETH back"
+      explanation="You already lost ownership of this name but will get ELA back"
     />
   )
 

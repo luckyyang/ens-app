@@ -1,5 +1,5 @@
-import { getWeb3, getAccounts, getNetworkId, isReadOnly } from '@ensdomains/ui'
-import { getAddress } from '@ensdomains/ui'
+import { getWeb3, getAccounts, getNetworkId, isReadOnly } from 'eladomains-ui'
+import { getAddress } from 'eladomains-ui'
 import merge from 'lodash/merge'
 import fifsResolvers, {
   defaults as fifsDefaults
@@ -42,7 +42,7 @@ const resolvers = {
         case 2:
           return 'morden'
         case 3:
-          return 'ropsten'
+          return 'ela'
         case 4:
           return 'rinkeby'
         case 5:
@@ -69,7 +69,7 @@ const resolvers = {
     },
     publicResolver: async () => {
       try {
-        const resolver = await getAddress('resolver.eth')
+        const resolver = await getAddress('resolver.ela')
         return {
           address: resolver,
           __typename: 'Resolver'

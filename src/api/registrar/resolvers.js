@@ -13,7 +13,7 @@ import {
   reclaim,
   submitProof,
   getOwner
-} from '@ensdomains/ui'
+} from 'eladomains-ui'
 
 import modeNames from '../modes'
 import { sendHelper } from '../resolverUtils'
@@ -79,12 +79,12 @@ const resolvers = {
         }
 
         if (modeNames[state] === 'Owned') {
-          owner = await getOwner(`${name}.eth`)
+          owner = await getOwner(`${name}.ela`)
         }
 
         const data = {
           domainState: {
-            name: `${name}.eth`,
+            name: `${name}.ela`,
             state: modeNames[state],
             registrationDate,
             revealDate,

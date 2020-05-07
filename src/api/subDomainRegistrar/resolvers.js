@@ -1,6 +1,6 @@
 import { queryAll } from '../subDomainRegistrar'
 import { fromWei } from 'ethjs-unit'
-import { getOwner } from '@ensdomains/ui'
+import { getOwner } from 'eladomains-ui'
 
 const defaults = {
   subDomainState: []
@@ -24,13 +24,13 @@ const resolvers = {
             let owner = null
 
             if (!node.available) {
-              owner = await getOwner(`${node.label}.${node.domain}.eth`)
+              owner = await getOwner(`${node.label}.${node.domain}.ela`)
             }
             const newNode = {
               ...node,
-              id: `${node.label}.${node.domain}.eth`,
+              id: `${node.label}.${node.domain}.ela`,
               owner,
-              name: `${node.label}.${node.domain}.eth`,
+              name: `${node.label}.${node.domain}.ela`,
               state: node.available ? 'Open' : 'Owned',
               price: fromWei(node.price, 'ether'),
               __typename: 'SubDomain'

@@ -4,7 +4,7 @@ import DomainInfo from '../components/EthRegistrar/DomainInfo'
 
 export default () => (
   <div>
-    <h2>Eth Domain Registrar</h2>
+    <h2>Ela Domain Registrar</h2>
     <CheckAvailability />
     <DomainInfo />
   </div>

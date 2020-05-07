@@ -16,5 +16,8 @@
   },
   "art": {
     "supported": true
+  },
+  "ela": {
+    "supported": true
   }
 }
