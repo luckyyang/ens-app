@@ -21,13 +21,13 @@ window.addEventListener('load', async () => {
     ) {
       await setupENS({
         reloadOnAccountsChange: true,
-        customProvider: 'https://rpc.elaeth.io',
+        // customProvider: 'https://rpc.elaeth.io',
         ensAddress: process.env.REACT_APP_ENS_ADDRESS
       })
     } else {
       await setupENS({
         reloadOnAccountsChange: false,
-        customProvider: 'https://rpc.elaeth.io',
+        // customProvider: 'https://rpc.elaeth.io',
         ensAddress: process.env.REACT_APP_ENS_ADDRESS
       })
     }
