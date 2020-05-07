@@ -33,7 +33,6 @@ const resolvers = {
     async getMinimumCommitmentAge() {
       try {
         const minCommitmentAge = await getMinimumCommitmentAge()
-        console.log(minCommitmentAge)
         return parseInt(minCommitmentAge)
       } catch (e) {
         console.log(e)
