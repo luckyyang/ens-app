@@ -317,8 +317,8 @@ export default props => (
             What it is
           </H2>
           <p>
-            The Ethereum Name Service is a distributed, open and extensible
-            naming system based on the Ethereum blockchain. ENS eliminates the
+            The Elastos Name Service is a distributed, open and extensible
+            naming system based on the Elastos blockchain. ENS eliminates the
             need to copy or type long addresses.
           </p>
           <ButtonLink type="primary" to="/about">
