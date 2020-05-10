@@ -129,7 +129,7 @@ const getContent = (step, account, dnsOwner) => {
       title: (
         <>
           Set up a text record in your domain registrar, then click refresh. The
-          text record should contain your Ethereum address in the form:{' '}
+          text record should contain your Elastos address in the form:{' '}
           <Address>a={account}</Address>
         </>
       ),
@@ -149,7 +149,7 @@ const getContent = (step, account, dnsOwner) => {
         title:
           "You don't appear to be the DNS Owner of this domain, but anyone can add this domain to the ENS Registry. ",
         text:
-          "If you know you own this domain, change it's TXT record to contain your Ethereum Address and refresh this page to perform the DNSSEC verification again.",
+          "If you know you own this domain, change it's TXT record to contain your Elastos Address and refresh this page to perform the DNSSEC verification again.",
         number: 3
       }
     ],
@@ -166,7 +166,7 @@ const getContent = (step, account, dnsOwner) => {
         title:
           "You don't appear to be the DNS Owner of this domain, but anyone can add this domain to the ENS Registry. ",
         text:
-          "If you know you own this domain, change it's TXT record to contain your Ethereum Address and refresh this page to perform the DNSSEC verification again.",
+          "If you know you own this domain, change it's TXT record to contain your Elastos Address and refresh this page to perform the DNSSEC verification again.",
         number: 3
       }
     ],

@@ -188,8 +188,8 @@ function About() {
     <AboutContainer>
       <ElevatorPitch>
         <H2>
-          The Ethereum Name Service is a distributed, open and extensible naming
-          system based on the Ethereum blockchain. ENS eliminates the need to
+          The Elastos Name Service is a distributed, open and extensible naming
+          system based on the Elastos blockchain. ENS eliminates the need to
           copy or type long addresses.
         </H2>
       </ElevatorPitch>
@@ -201,7 +201,7 @@ function About() {
             <Map />
           </AboutENSImgContainer>
           <AboutENSText>
-            Map simple names like ‘alice.ela’ to Ethereum addresses, content
+            Map simple names like ‘alice.ela’ to Elastos addresses, content
             hashes, and metadata.
           </AboutENSText>
         </Card>

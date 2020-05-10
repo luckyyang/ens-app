@@ -133,8 +133,7 @@ function Records({
     hasResolver,
     hasRecords
   )
-  const canEditRecords =
-    !isOldPublicResolver && !isDeprecatedResolver && isOwner
+  const canEditRecords = isOwner
 
   if (!shouldShowRecords) {
     return null
@@ -258,11 +257,7 @@ export default function ResolverAndRecords({
     isPublicResolverReady = data.getResolverMigrationInfo.isPublicResolverReady
   }
 
-  const needsToBeMigrated =
-    !loading &&
-    isMigratedToNewRegistry &&
-    isPublicResolverReady &&
-    (isOldPublicResolver || isDeprecatedResolver)
+  const needsToBeMigrated = false
   return (
     <>
       <ResolverWrapper needsToBeMigrated={needsToBeMigrated}>
