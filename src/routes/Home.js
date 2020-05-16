@@ -16,6 +16,7 @@ import QuestionMarkDefault from '../components/Icons/QuestionMark'
 import HowToUseDefault from '../components/HowToUse/HowToUse'
 import Alice from '../components/HomePage/Alice'
 import ENSLogo from '../components/HomePage/images/ENSLogo.svg'
+import ELALogo from '../../src/assets/elastos-ela-logo.svg'
 import { ReactComponent as DefaultPermanentRegistrarIcon } from '../components/Icons/PermanentRegistrar.svg'
 
 const Favourites = styled('div')`
@@ -283,15 +284,16 @@ export default props => (
                   opacity,
                   transform: `scale(${scale})`
                 }}
-                src={ENSLogo}
+                src={ELALogo}
               />
               <PermanentRegistrarLogo
                 style={{
-                  opacity,
-                  transform: `scale(${scale})`
+                  opacity: 0.9,
+                  transform: `scale(${scale})`,
+                  color: `white`
                 }}
               >
-                Permanent Registrar
+                Elastos Permanent Registrar
               </PermanentRegistrarLogo>
               <Search />
             </Fragment>
