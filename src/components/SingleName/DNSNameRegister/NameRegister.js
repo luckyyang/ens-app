@@ -139,7 +139,7 @@ const getContent = (step, account, dnsOwner) => {
     SUBMIT_PROOF: [
       {
         title:
-          'You are the owner of this address. Add your domain to the ENS Registry now.',
+          'You are the owner of this address. Add your domain to the ELANS Registry now.',
         text:
           'The address that appears in the DNS txt record is your same address.',
         number: 3,
@@ -147,7 +147,7 @@ const getContent = (step, account, dnsOwner) => {
       },
       {
         title:
-          "You don't appear to be the DNS Owner of this domain, but anyone can add this domain to the ENS Registry. ",
+          "You don't appear to be the DNS Owner of this domain, but anyone can add this domain to the ELANS Registry. ",
         text:
           "If you know you own this domain, change it's TXT record to contain your Elastos Address and refresh this page to perform the DNSSEC verification again.",
         number: 3
@@ -156,7 +156,7 @@ const getContent = (step, account, dnsOwner) => {
     SUBMIT_SENT: [
       {
         title:
-          'You are the owner of this address. Add your domain to the ENS Registry now.',
+          'You are the owner of this address. Add your domain to the ELANS Registry now.',
         text:
           'The address that appears in the DNS txt record is your same address.',
         number: 3,
@@ -164,7 +164,7 @@ const getContent = (step, account, dnsOwner) => {
       },
       {
         title:
-          "You don't appear to be the DNS Owner of this domain, but anyone can add this domain to the ENS Registry. ",
+          "You don't appear to be the DNS Owner of this domain, but anyone can add this domain to the ELANS Registry. ",
         text:
           "If you know you own this domain, change it's TXT record to contain your Elastos Address and refresh this page to perform the DNSSEC verification again.",
         number: 3
@@ -173,14 +173,14 @@ const getContent = (step, account, dnsOwner) => {
     SUBMIT_CONFIRMED: [
       {
         title:
-          'Congratulations! You have successfully added this DNS domain to the ENS Registry.',
+          'Congratulations! You have successfully added this DNS domain to the ELANS Registry.',
         text: 'Since you are the owner, you can manage your name now. ',
         number: 4,
         owner: true
       },
       {
         title:
-          'Congratulations! You have successfully added this DNS domain to the ENS Registry.',
+          'Congratulations! You have successfully added this DNS domain to the ELANS Registry.',
         text:
           'Since you are not the owner, you can only view the name in the manager.',
         number: 4

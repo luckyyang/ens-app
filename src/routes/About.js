@@ -181,7 +181,7 @@ const UnderTheSurfaceImgContainer = styled('div')`
 `
 
 function About() {
-  useDocumentTitle('About ENS')
+  useDocumentTitle('About ELANS')
   useScrollTo(0)
   const mediumBP = useMediaMin('medium')
   return (
@@ -189,12 +189,12 @@ function About() {
       <ElevatorPitch>
         <H2>
           The Elastos Name Service is a distributed, open and extensible naming
-          system based on the Elastos blockchain. ENS eliminates the need to
+          system based on the Elastos blockchain. ELANS eliminates the need to
           copy or type long addresses.
         </H2>
       </ElevatorPitch>
 
-      <SubTitle>About ENS</SubTitle>
+      <SubTitle>About ELANS</SubTitle>
       <AboutENSContainer>
         <Card>
           <AboutENSImgContainer>
@@ -226,13 +226,13 @@ function About() {
         </SubDomainExplainerWrapper>
 
         <SubDomainText>
-          Like DNS, ENS operates on a system of dot-separated hierarchial names
-          called domains, with the owner of a domain having full control over
-          the allocation of subdomains.
+          Like DNS, ELANS operates on a system of dot-separated hierarchial
+          names called domains, with the owner of a domain having full control
+          over the allocation of subdomains.
         </SubDomainText>
       </SubDomainContent>
 
-      <SubTitle>HOW TO USE ENS</SubTitle>
+      <SubTitle>HOW TO USE ELANS</SubTitle>
       <HowToUse text={true} />
       <SubTitle>Under the surface</SubTitle>
       <UnderTheSurface>
