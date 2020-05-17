@@ -310,7 +310,7 @@ export default props => (
           </H2>
           <p>
             The Elastos Name Service is a distributed, open and extensible
-            naming system based on the Elastos blockchain. ENS eliminates the
+            naming system based on the Elastos blockchain. ELANS eliminates the
             need to copy or type long addresses.
           </p>
           <ButtonLink type="primary" to="/about">
@@ -326,10 +326,10 @@ export default props => (
         <Inner>
           <H2>
             <QuestionMark color="#2B2B2B" />
-            How to use ENS
+            How to use ELANS
           </H2>
           <p>
-            The ENS App is a Graphical User Interface for non-technical users.
+            The ELANS App is a Graphical User Interface for non-technical users.
             It allows you to search any name, manage their addresses or
             resources it points to and create subdomains for each name.
           </p>

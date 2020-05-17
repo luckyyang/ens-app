@@ -17,7 +17,7 @@ export default function NotAvailable({ domain }) {
   return (
     <NotAvailableContainer>
       <Message>
-        Registration of new .ela names is disabled while the ENS migration is
+        Registration of new .ela names is disabled while the ELANS migration is
         underway. Please check back on February 10th.
       </Message>
     </NotAvailableContainer>
