@@ -75,7 +75,7 @@ class Favourites extends Component {
     hasSubDomainFavourites: true
   }
   componentDidMount() {
-    document.title = 'ENS Favourites'
+    document.title = 'ELANS Favourites'
   }
   render() {
     const { hasFavourites, hasSubDomainFavourites } = this.state

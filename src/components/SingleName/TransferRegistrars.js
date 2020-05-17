@@ -143,7 +143,7 @@ function TransferRegistrars({
         Congratulations on Migrating your domain!
       </MigrationInstruction>
       <MigrationExplanation>
-        You successfully migrated this domain to the new ENS Permanent
+        You successfully migrated this domain to the new ELANS Permanent
         Registrar. We've sent back to you the ELA that you had locked in the
         older registrar contract.
       </MigrationExplanation>
@@ -153,11 +153,12 @@ function TransferRegistrars({
   const TooEarly = (
     <>
       <MigrationInstruction>
-        Be Ready! ENS is migrating to a new Registrar.
+        Be Ready! ELANS is migrating to a new Registrar.
       </MigrationInstruction>
       <MigrationExplanation>
-        This domain is currently recorded in the old ENS Registrar which will be
-        discontinued after 2019.05.04. Migrate to the new ENS Registrar between{' '}
+        This domain is currently recorded in the old ELANS Registrar which will
+        be discontinued after 2019.05.04. Migrate to the new ELANS Registrar
+        between{' '}
         <strong>
           {formatDate(migrationStartDate, true)} -{' '}
           {formatDate(transferEndDate, true)}
@@ -173,9 +174,9 @@ function TransferRegistrars({
       <MigrationInstruction>Migration period ended</MigrationInstruction>
       <MigrationExplanation>
         You no longer own this name and it has been made available for
-        registration in the new ENS Permanent Registrar. You can release the
+        registration in the new ELANS Permanent Registrar. You can release the
         domain from the older registrar to get your locked ELA back and register
-        it again in the new ENS Permanent Registrar. <LearnMore />
+        it again in the new ELANS Permanent Registrar. <LearnMore />
       </MigrationExplanation>
     </>
   )

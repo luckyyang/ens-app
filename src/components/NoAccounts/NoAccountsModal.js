@@ -63,12 +63,12 @@ class NoAccountsModal extends React.Component {
         />
         <NoAccountExplanation show={showModal} onClick={this.toggleModal}>
           <Point number="1">
-            Install Metamask or use another Dapp browser to search the ENS
+            Install Metamask or use another Dapp browser to search the ELANS
             registry.
           </Point>
           <Point number="2">
             Login to Metamask and unlock your wallet to use all the features of
-            ENS.
+            ELANS.
           </Point>
         </NoAccountExplanation>
       </NoAccountContainer>

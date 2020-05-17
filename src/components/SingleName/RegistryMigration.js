@@ -86,7 +86,7 @@ export default function RegistryMigration({
           : defaultMessage}
         {domain.parent !== 'ela' && !dnssecmode && (
           <SubWarning>
-            *If you trade ENS names, do not accept this name!
+            *If you trade ELANS names, do not accept this name!
           </SubWarning>
         )}
       </WarningContent>
