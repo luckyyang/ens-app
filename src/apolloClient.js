@@ -14,8 +14,8 @@ const cache = new InMemoryCache({
 })
 
 const endpoints = {
-  '1': 'https://graph.elaeth.io/subgraphs/name/mainnet/ela-ens/',
-  '3': 'https://graph.elaeth.io/subgraphs/name/mainnet/ela-ens/'
+  '1': 'https://graph.elaeth.io/subgraphs/name/mainnet/ela-ens',
+  '3': 'https://graph.elaeth.io/subgraphs/name/mainnet/ela-ens'
   // '4': 'https://graph.elaeth.io/subgraphs/name/ensdomains/ensrinkeby',
   // '5': 'https://graph.elaeth.io/subgraphs/name/ensdomains/ensgoerli'
 }
