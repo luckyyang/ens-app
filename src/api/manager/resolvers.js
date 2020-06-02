@@ -37,7 +37,7 @@ import {
   getOldResolverContract,
   getNamehash,
   encodeContenthash
-} from 'eladomains-ui'
+} from 'eladomains-ui-mainnet'
 import { formatsByName } from '@ensdomains/address-encoder'
 import isEqual from 'lodash/isEqual'
 import { query } from '../subDomainRegistrar'

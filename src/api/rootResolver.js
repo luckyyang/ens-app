@@ -1,5 +1,10 @@
-import { getWeb3, getAccounts, getNetworkId, isReadOnly } from 'eladomains-ui'
-import { getAddress } from 'eladomains-ui'
+import {
+  getWeb3,
+  getAccounts,
+  getNetworkId,
+  isReadOnly
+} from 'eladomains-ui-mainnet'
+import { getAddress } from 'eladomains-ui-mainnet'
 import merge from 'lodash/merge'
 import fifsResolvers, {
   defaults as fifsDefaults
