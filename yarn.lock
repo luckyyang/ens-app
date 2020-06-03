@@ -6290,10 +6290,10 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-eladomains-ui-mainnet@^2.0.19:
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/eladomains-ui-mainnet/-/eladomains-ui-mainnet-2.0.19.tgz#5a66462304171ad3bb78180109189ccb6243eead"
-  integrity sha512-348zX/6gbKQHzhPhWWjvseBwD4XsDDfdWRYJT9WXZtdefylUbs4FCUWunzYb/xcMOYpvMW6VDJ5x3UYEN4JrSg==
+eladomains-ui-mainnet@^2.0.20:
+  version "2.0.20"
+  resolved "https://registry.yarnpkg.com/eladomains-ui-mainnet/-/eladomains-ui-mainnet-2.0.20.tgz#55a6e67d716600285e88a5faaba46cae23e4bd39"
+  integrity sha512-kk/qcjr5viAJKPbnbBpMYOsYPC3pCixJ+r2sF7sX6XsVUyTtWpucpHOZaX0YuPEMYqrRmJp+/coELcTDe8+PKw==
   dependencies:
     "@0xproject/utils" "^2.0.2"
     "@babel/runtime" "^7.4.4"
