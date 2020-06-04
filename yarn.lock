@@ -6290,10 +6290,10 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-eladomains-ui-mainnet@^2.0.20:
-  version "2.0.20"
-  resolved "https://registry.yarnpkg.com/eladomains-ui-mainnet/-/eladomains-ui-mainnet-2.0.20.tgz#55a6e67d716600285e88a5faaba46cae23e4bd39"
-  integrity sha512-kk/qcjr5viAJKPbnbBpMYOsYPC3pCixJ+r2sF7sX6XsVUyTtWpucpHOZaX0YuPEMYqrRmJp+/coELcTDe8+PKw==
+eladomains-ui-mainnet@^2.0.23:
+  version "2.0.23"
+  resolved "https://registry.yarnpkg.com/eladomains-ui-mainnet/-/eladomains-ui-mainnet-2.0.23.tgz#51be29ad76ac8cee68e590e9510d264bbeba0aa4"
+  integrity sha512-Iozv4OWZbFVmP6ypae+u7uPXrbuYnQjXgvDRTtY1KTV7Co+0EVYEgVweYGoSAq9mO/oW3YygS62/Vwrwvx4lTg==
   dependencies:
     "@0xproject/utils" "^2.0.2"
     "@babel/runtime" "^7.4.4"
@@ -13262,7 +13262,7 @@ react-add-to-calendar@^0.1.5:
   optionalDependencies:
     moment "^2.18.1"
 
-react-apollo@^3.0.0:
+react-apollo@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-3.1.5.tgz#36692d393c47e7ccc37f0a885c7cc5a8b4961c91"
   integrity sha512-xOxMqxORps+WHrUYbjVHPliviomefOpu5Sh35oO3osuOyPTxvrljdfTLGCggMhcXBsDljtS5Oy4g+ijWg3D4JQ==
