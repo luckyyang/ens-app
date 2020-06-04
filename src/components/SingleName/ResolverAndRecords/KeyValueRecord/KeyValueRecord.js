@@ -245,7 +245,7 @@ function Record(props) {
       key: textKey
     }
   })
-  const dataValue = Object.values(data)[0]
+  const dataValue = Object.values(data || {})[0]
   useEffect(() => {
     if (recordAdded === textKey) {
       let timeToWait = 200
