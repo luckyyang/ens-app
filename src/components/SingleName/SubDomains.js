@@ -116,7 +116,7 @@ function SubDomains({
           }}
         >
           {({ loading, error, data, refetch }) => {
-            if (error) {
+            if (error || !data || !data.domain) {
               console.error(
                 'Unable to get subdomains from subgraph, falling back to web3 ',
                 error
