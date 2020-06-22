@@ -75,6 +75,7 @@ function SubDomainsFromWeb3({ domain, canAddSubdomain }) {
                   owner={d.owner}
                   parent={d.parent}
                   labelhash={d.labelHash}
+                  key={d.name}
                 />
               ))}
           </>
@@ -187,6 +188,7 @@ function SubDomains({
                         owner={d.owner.id}
                         parent={domain.name}
                         labelhash={d.labelHash}
+                        key={d.name}
                       />
                     )
                   })}
