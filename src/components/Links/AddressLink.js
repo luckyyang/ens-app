@@ -9,9 +9,7 @@ const AddressLinkContainer = styled(Link)`
 `
 
 const AddressLink = ({ children, address, className }) => (
-  <AddressLinkContainer to={`/address/${address}`} className={className}>
-    {children}
-  </AddressLinkContainer>
+  <div className={className}>{children}</div>
 )
 
 export default AddressLink
