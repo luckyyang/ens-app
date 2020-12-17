@@ -17,7 +17,7 @@ const DomainInfoContainer = ({ searchTerm }) => {
   return (
     <Query query={GET_SINGLE_NAME} variables={{ name: searchTerm + '.ela' }}>
       {({ data, loading, error }) => {
-        const { singleName } = data
+        const { singleName } = data || {}
         if (error) {
           console.error(error)
           return null

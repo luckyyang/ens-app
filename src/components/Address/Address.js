@@ -75,10 +75,10 @@ function filterOutReverse(domains) {
 }
 
 function DomainList({ domains, address }) {
-  const { loading, data, error } = useQuery(
-    GET_DOMAINS_OWNED_BY_ADDRESS_FROM_SUBGRAPH,
-    { variables: { id: address } }
-  )
+  const { loading, data, error } =
+    useQuery(GET_DOMAINS_OWNED_BY_ADDRESS_FROM_SUBGRAPH, {
+      variables: { id: address }
+    }) || {}
 
   if (error) {
     return 'Error getting domains'
@@ -127,7 +127,7 @@ export default function Address({ address }) {
           target="_blank"
           href={`${etherScanAddr}/address/${address}`}
         >
-          View on EtherScan
+          View on Explorer
         </ExternalButtonLink>
       )}
       <DomainList address={address} />

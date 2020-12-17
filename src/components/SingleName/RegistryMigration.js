@@ -46,12 +46,13 @@ export default function RegistryMigration({
   const { state, actions } = useEditable()
   const { txHash, pending, confirmed } = state
   const { startPending, setConfirmed } = actions
+  const queryRes = useQuery(IS_CONTRACT_CONTROLLER, {
+    variables: { address: domain.owner }
+  })
   const {
     data: { isContractController },
     loading: loadingIsContractController
-  } = useQuery(IS_CONTRACT_CONTROLLER, {
-    variables: { address: domain.owner }
-  })
+  } = queryRes.data ? queryRes : { data: {} }
   const [migrateRegistry] = useMutation(MIGRATE_REGISTRY, {
     variables: { name: domain.name, address: domain.owner },
     onCompleted: data => {

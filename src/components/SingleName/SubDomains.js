@@ -9,7 +9,7 @@ import Loader from '../Loader'
 import { H2 } from '../Typography/Basic'
 import AddSubdomain from './AddSubdomain'
 import ChildDomainItem from '../DomainItem/ChildDomainItem'
-import { getNamehash } from 'eladomains-ui'
+import { getNamehash } from 'eladomains-ui-mainnet'
 import { decryptName } from '../../api/labels'
 
 const SubDomainsContainer = styled('div')`
@@ -75,6 +75,7 @@ function SubDomainsFromWeb3({ domain, canAddSubdomain }) {
                   owner={d.owner}
                   parent={d.parent}
                   labelhash={d.labelHash}
+                  key={d.name}
                 />
               ))}
           </>
@@ -116,7 +117,7 @@ function SubDomains({
           }}
         >
           {({ loading, error, data, refetch }) => {
-            if (error || !data.domain) {
+            if (error || !data || !data.domain) {
               console.error(
                 'Unable to get subdomains from subgraph, falling back to web3 ',
                 error
@@ -187,6 +188,7 @@ function SubDomains({
                         owner={d.owner.id}
                         parent={domain.name}
                         labelhash={d.labelHash}
+                        key={d.name}
                       />
                     )
                   })}

@@ -516,24 +516,27 @@ function NameDetails({
 }) {
   const duringMigration = process.env.REACT_APP_MIGRATION_COMPLETE !== 'True'
   const [loading, setLoading] = useState(undefined)
+  const queryRes = useQuery(IS_MIGRATED, {
+    variables: {
+      name: domain.name
+    }
+  })
   const {
     data: { isMigrated },
     loading: loadingIsMigrated,
     refetch: refetchIsMigrated
-  } = useQuery(IS_MIGRATED, {
+  } = queryRes.data ? queryRes : { data: {} }
+
+  const queryRes2 = useQuery(IS_MIGRATED, {
     variables: {
-      name: domain.name
+      name: domain.parent
     }
   })
 
   const {
     data: { isMigrated: isParentMigrated },
     loading: loadingIsParentMigrated
-  } = useQuery(IS_MIGRATED, {
-    variables: {
-      name: domain.parent
-    }
-  })
+  } = queryRes2.data ? queryRes2 : { data: {} }
 
   const isMigratedToNewRegistry = !loadingIsMigrated && isMigrated
   const isParentMigratedToNewRegistry = isParentMigrated

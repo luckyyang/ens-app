@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom'
 import { ApolloProvider } from 'react-apollo'
 import 'core-js/es/object'
 import App from 'App'
-import { setupENS } from 'eladomains-ui'
+import { setupENS } from 'eladomains-ui-mainnet'
 import { SET_ERROR } from 'graphql/mutations'
 
 import { GlobalStateProvider } from 'globalState'
 import 'globalStyles'
 import { setupClient } from 'apolloClient'
-import { getNetworkId } from 'eladomains-ui'
+import { getNetworkId } from 'eladomains-ui-mainnet'
 
 window.addEventListener('load', async () => {
   let client

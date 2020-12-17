@@ -242,13 +242,14 @@ export default function ResolverAndRecords({
   let areRecordsMigrated = true
   let isPublicResolverReady = false
 
-  const { data, loading } = useQuery(GET_RESOLVER_MIGRATION_INFO, {
-    variables: {
-      name: domain.name,
-      resolver: domain.resolver
-    },
-    skip: !hasResolver
-  })
+  const { data, loading } =
+    useQuery(GET_RESOLVER_MIGRATION_INFO, {
+      variables: {
+        name: domain.name,
+        resolver: domain.resolver
+      },
+      skip: !hasResolver
+    }) || {}
 
   if (data && data.getResolverMigrationInfo) {
     isOldPublicResolver = data.getResolverMigrationInfo.isOldPublicResolver

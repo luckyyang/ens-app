@@ -6,7 +6,7 @@ import {
   isLabelValid as _isLabelValid,
   isEncodedLabelhash,
   emptyAddress as _emptyAddress
-} from 'eladomains-ui'
+} from 'eladomains-ui-mainnet'
 import * as jsSHA3 from 'js-sha3'
 import { saveName } from '../api/labels'
 
@@ -157,5 +157,5 @@ export function isElementInViewport(el) {
 export const emptyAddress = _emptyAddress
 
 export function isShortName(term) {
-  return [...term].length < 3
+  return [...term].length <= 3
 }

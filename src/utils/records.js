@@ -1,4 +1,4 @@
-import { encodeContenthash, isValidContenthash } from 'eladomains-ui'
+import { encodeContenthash, isValidContenthash } from 'eladomains-ui-mainnet'
 import { addressUtils } from 'utils/utils'
 import { formatsByName } from '@ensdomains/address-encoder'
 

@@ -38,7 +38,7 @@ const InnerWrapper = styled('div')`
 export default function ShortName({ name }) {
   return (
     <ShortNameContainer>
-      <InnerWrapper>1 ~ 2 characters are not allowed to register.</InnerWrapper>
+      <InnerWrapper>1 ~ 3 characters are not allowed to register.</InnerWrapper>
     </ShortNameContainer>
   )
 }

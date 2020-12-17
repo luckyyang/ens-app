@@ -95,7 +95,7 @@ class Favourites extends Component {
                     variables={{ name: domain.name }}
                     key={domain.name}
                   >
-                    {({ loading, error, data }) => {
+                    {({ loading, error, data = {} }) => {
                       if (error)
                         return (
                           <div>

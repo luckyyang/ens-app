@@ -1,6 +1,6 @@
 import { queryAll } from '../subDomainRegistrar'
 import { fromWei } from 'ethjs-unit'
-import { getOwner } from 'eladomains-ui'
+import { getOwner } from 'eladomains-ui-mainnet'
 
 const defaults = {
   subDomainState: []

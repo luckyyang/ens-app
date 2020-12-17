@@ -31,7 +31,7 @@ class GetAccount extends Component {
 }
 
 export function useAccount() {
-  const { loading, error, data } = useQuery(GET_ACCOUNTS)
+  const { loading, error, data } = useQuery(GET_ACCOUNTS) || {}
   const {
     web3: { accounts }
   } = data
